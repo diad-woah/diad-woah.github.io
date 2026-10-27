@@ -64,7 +64,7 @@ a { text-decoration-thickness: 1px; text-underline-offset: 3px; }
     font-weight: 600; color: $woah-orange; font-size: 1.05rem;
   }
   h1 { color: #fff; font-size: clamp(2.3rem, 5vw, 4rem); font-weight: 700; line-height: 1; margin: .3rem 0 1rem; }
-  p.lead { max-width: 640px; font-size: 1.15rem; color: #F0F0F0; }
+  p.lead { max-width: 720px; font-size: 1.15rem; color: #F0F0F0; }
   .photo-credit { position: absolute; right: 1rem; bottom: .5rem; font-size: .7rem; opacity: .7; }
 }
 .hero.hero-small { min-height: 320px; }
@@ -186,6 +186,22 @@ table.woah-table td, table.woah-table th { padding: .55rem .8rem; }
 // full-width home tweaks
 .page-layout-full main.content { padding-top: 0; }
 .home-section { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+.section-head { margin: 2.8rem 0 1.4rem; }
+.hero + .home-section > .section-head:first-child { margin-top: 0; }
+.section-kicker {
+  font-family: "Barlow Condensed", sans-serif; text-transform: uppercase; letter-spacing: .12em;
+  font-weight: 600; color: $woah-orange-dark; font-size: 1rem;
+}
+.section-title-row {
+  display: flex; align-items: center; gap: 1.25rem;
+  h2 { margin: 0; color: $woah-black; }
+  &::after { content: ""; flex: 1; min-width: 2rem; border-top: 1px solid rgba($woah-black, .25); }
+  .section-link { order: 1; white-space: nowrap; font-weight: 600; text-decoration: none; }
+  @media (max-width: 768px) {
+    flex-wrap: wrap; gap: .4rem;
+    &::after { display: none; }
+  }
+}
 
 @media (max-width: 768px) {
   .navbar .navbar-title { display: none; }

@@ -22,8 +22,9 @@ listing:
   <div class="hero-inner">
     <div class="kicker">World Organisation for Animal Health</div>
     <h1>Data Integration<br>&amp; Analytics Department</h1>
-    <p class="lead">Technical material produced by DIAD: reports, code, datasets, models and training
-    that turn animal health data into evidence and advice.</p>
+    <p class="lead">This site gives WOAH Members, partners and researchers open access to the technical work
+    of WOAH's Data Integration &amp; Analytics Department: the reports, datasets, models, code and training
+    we produce to monitor standards, track animal diseases and measure their economic impact.</p>
     <a class="btn-woah" href="resources.html">Browse all material</a>
     <a class="btn-woah ghost" href="about.html">About the department</a>
   </div>
@@ -31,7 +32,10 @@ listing:
 
 <div class="home-section">
 
-<h2>Our four areas</h2>
+<div class="section-head">
+  <div class="section-kicker">Our structure</div>
+  <div class="section-title-row"><h2>From data to evidence: our four areas of expertise</h2></div>
+</div>
 <div class="area-grid">
   <a class="area-card obs" href="observatory/index.html">
     <div class="area-swatch">OBS</div>
@@ -71,15 +75,19 @@ listing:
   </a>
 </div>
 
-<h2>Recently published</h2>
+<div class="section-head">
+  <div class="section-kicker">Latest</div>
+  <div class="section-title-row">
+    <h2>Recently published</h2>
+    <a class="section-link" href="resources.html">See all material →</a>
+  </div>
+</div>
 </div>
 ```
 
 ::: {.home-section}
 ::: {#latest}
 :::
-
-[See all material →](resources.qmd){.btn-woah .ghost-dark}
 :::
 
 ```{=html}
